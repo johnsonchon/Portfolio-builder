@@ -1,0 +1,284 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: #FAFAFA;
+    width: 100%;
+    max-width: 100vw;
+}
+
+header {
+    display: flex;
+    height: 65px;
+    width: 100vw;
+    box-shadow: 0px 1px 5px rgb(192, 192, 192);
+    background-color: white;
+    
+}
+
+.logo-area {
+    display: flex;
+    height: 65px;
+    padding-left: 50px;
+    /* width: 250px; */
+    min-width: 220px;
+    cursor: pointer;
+    box-sizing:border-box;
+    
+}
+
+.logo-area > svg {
+    width: 15px;
+    display: block;
+}
+
+.logo-area > p {
+    color: #242424;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 12px
+}
+
+.search-area {
+    height: 65px;
+    width: 100%;
+}
+
+.search-area > input {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 50px;
+    height: 65px;
+    background-color: #FAFAFA;
+    border: none;
+    box-sizing:border-box;
+    width: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #BEBEBE;
+}
+
+/* menu area */
+.menu-area {
+    background-color: rgb(253, 253, 253);
+    height: calc(100vh - 65px);
+    max-height: 100%;
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    top: 65px;
+    width: 220px;
+    box-shadow: 1px 5px 5px rgb(192, 192, 192);
+    display: none;
+    transition: all .5s ease;
+    
+}
+
+.gray-out {
+    position: absolute;
+    z-index: 100;
+    background-color: #242424;
+    opacity: .4;
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    height: 100%;
+    display: none;
+}
+
+
+/* Full dashboard area */
+.dashboard {
+    width: 100%;
+    height: calc(100vh - 90px);
+    padding: 30px 50px;
+    box-sizing:border-box;
+}
+/* end full dashboard are */
+
+/* top dash area */
+.top-dash {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    box-sizing:border-box;
+    /* margin-bottom: 30px; */
+}
+
+.topbox {
+    width: 50%;
+    height: 100%;
+    /* min-height: 250px; */
+    background-color: white;
+    box-shadow: 0px 1px 5px rgb(192, 192, 192);
+    box-sizing:border-box;
+}
+
+.box-header {
+    display: flex;
+}
+
+.title > p {
+    color: #242424;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 30px 0 10px 30px;
+}
+
+.boxbuttons {
+    margin-left: auto;
+    padding: 11px 30px 10px 30px;
+}
+
+.views {
+    background-color: #55C9BE;
+}
+
+.view-drop {
+    width: 135px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0px 1px 5px rgb(192, 192, 192);
+    margin-top: 5px;
+}
+
+.fa, .fa-sort-down {
+    padding-left: 5px;
+
+}
+
+.sp500 {
+    background-color: #2E3192;
+}
+
+.reset {
+    background-color: #662D91;
+    margin-left: 10px;
+}
+
+button {
+    border: none;
+    color: white;
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+}
+
+hr {
+    border: 0.5px solid #E2E2E2;
+    margin: 0;
+}
+
+.metrics {
+    margin-left: 30px;
+}
+/* end top dash area */
+
+/* Bottom dash area */
+.bot-dash {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    box-sizing:border-box;
+}
+
+.botbox {
+    width: 33.33%;
+    height: 100%;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0px 1px 5px rgb(192, 192, 192);
+    box-sizing:border-box;
+}
+
+.bot2, .bot3 {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 720px) {
+   html {
+       height: 100%;
+   }
+
+   body {
+       height: 100%;
+   }
+   
+    .container {
+       height: 100%;
+
+   }
+
+   header {
+        max-width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+   }
+
+   .dashboard {
+       height: 100%;
+       padding-bottom: 0;
+       margin-bottom: 0;
+   }
+
+   .top-dash {
+       flex-direction: column;
+       /* height: 1000px; */
+   }
+
+   .metrics {
+       margin-left: 0;
+       margin-top: 30px;
+   }
+
+   .topbox {
+       width: 100%;
+   }
+
+   .efficient, .metrics {
+       height: 300px;
+   }
+
+   .bot-dash {
+    width: 100%;
+    /* height: 50%; */
+    flex-direction: column;
+    }
+
+    .botbox {
+    width: 100%;
+    height: 100%;
+    }
+
+    .bot2, .bot3 {
+    margin-left: 0;
+    }
+
+    .bot3 {
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+}
