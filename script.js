@@ -3,6 +3,7 @@ var menu = document.getElementById("menu-pop");
 var grayOut = document.getElementById("gray");
 var viewDrop = document.getElementById("viewdrops");
 var btnS = document.getElementById("btn");
+var searchBar = document.getElementById("search");
 
 
 portBtn.onclick = function () {
@@ -35,4 +36,6 @@ btnS.onclick = function () {
     }
     
 }
+
+window.onload = searchBar.select();
 
